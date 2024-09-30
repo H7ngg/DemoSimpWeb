@@ -1,0 +1,185 @@
+/* Header.css */
+
+/* Container for the header */
+.header-container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  }
+  
+  /* Dark mode background */
+  .header-container.dark {
+    background-color: #1c1c1c;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Heading Styles */
+  .subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Image Container Styles */
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .caption {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  /* Logo text */
+  .logo-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1c1c1c; /* Zinc-800 */
+  }
+  
+  /* Dark mode logo text */
+  .logo-text.dark {
+    color: #d1d1d1; /* Zinc-200 */
+  }
+  
+  /* Logo icon */
+  .logo-icon {
+    margin-left: 10px;
+    width: 1.5rem; /* 6 */
+    height: 1.5rem; /* 6 */
+    color: #ef4444; /* Red-500 */
+  }
+  
+  /* Subtitle text */
+  .subtitle-text {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #6b7280; /* Zinc-500 */
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 200px; /* Adjust based on your menu height */
+    opacity: 1;
+  }
+  
+  .dropdown-item {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    border-bottom: 1px solid #555;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
+  }
+  /* Dark mode subtitle text */
+  .subtitle-text.dark {
+    color: #9ca3af; /* Zinc-400 */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #555;
+    margin-right: 10px;
+  }
+  
+  /* Dark mode navigation item */
+  .nav-item.dark {
+    color: #2337e5; /* Zinc-300 */
+  }
+  
+  /* Hover state for navigation item */
+  .nav-item:hover {
+    color: #00a8e8; /* Màu chữ khi hover */
+  }
+  
+  /* Dark mode hover state */
+  .nav-item.dark:hover {
+    color: #60a5fa; /* Primary foreground */
+  }
+  
+  /* Navigation item icon */
+  .nav-item-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Navigation item text */
+  .nav-item-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  
+  .sub-menu {
+    position: absolute;
+    background-color: #333; /* Adjust this color as needed */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .sub-menu .nav-item {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .sub-menu-icon {
+    margin-left: 8px;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  

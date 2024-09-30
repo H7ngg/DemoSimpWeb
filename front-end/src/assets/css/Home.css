@@ -1,0 +1,156 @@
+/* Grid container and item styles */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.grid-item {
+  flex: 1 1 calc(25% - 1rem); /* Each card takes up 25% of the row, minus margin */
+  margin: 0.5rem; /* Space between cards */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(0.95);
+}
+
+.card-image {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-radius: 50%; /* Optional: To make the image circular */
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover .card-image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    flex: 1 1 calc(50% - 1rem); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item {
+    flex: 1 1 100%; /* One card per row on the smallest screens */
+  }
+}
+
+/* Destructive button styles */
+.destructive-button {
+  padding: 0.25rem 0.5rem; /* Smaller padding */
+  font-size: 0.875rem; /* Smaller font size */
+  border-radius: 0.25rem; /* Rounded corners */
+  border: none; /* No border */
+  background-color: #ff4d4d; /* Destructive button color */
+  color: white; /* Text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.destructive-button:hover {
+  background-color: #ff1a1a; /* Darker color on hover */
+}
+
+/* Container styles */
+.bg-background {
+  background-color: #f5f5f5;
+}
+
+.text-foreground {
+  color: #333333;
+}
+
+.text-muted-foreground {
+  color: #7f8c8d;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Shared classes */
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Image container and text styles */
+.imageContainerClass {
+  display: flex;
+  justify-content: center; /* Đặt ảnh ở trung tâm theo chiều ngang */
+
+  height: 100vh; /* Thiết lập chiều cao bằng 100% chiều cao của viewport */
+  margin-top: 0; /* Xóa margin-top */
+}
+
+.imageContainerClass img {
+  max-width: 30%; /* Thu nhỏ ảnh còn 30% kích thước ban đầu */
+  height: auto; /* Giữ tỷ lệ khung hình ban đầu */
+}
+
+.imageClass {
+
+  margin-right: 1rem;
+}
+
+.captionClass {
+  color: #7f8c8d;
+}

@@ -1,0 +1,13 @@
+.footer {
+  background-color: black; /* Nền đen */
+  color: white; /* Chữ trắng */
+}
+
+.footer a {
+  color: white; /* Màu chữ của các liên kết trong footer */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
