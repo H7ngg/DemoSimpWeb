@@ -2,12 +2,22 @@ Dự Án Popular Scientists
 Đây là một ứng dụng web cung cấp thông tin về các nhà khoa học nổi tiếng, những đóng góp của họ và các thông tin cá nhân chi tiết. Dự án cho phép người dùng tìm kiếm, xem và khám phá thông tin chi tiết về các nhà khoa học.
 
 Tính Năng
+
 Tìm kiếm: Người dùng có thể tìm kiếm các nhà khoa học theo tên.
+
 Phân trang: Danh sách các nhà khoa học được phân trang để dễ dàng duyệt.
+
 Xem chi tiết: Mỗi nhà khoa học có một trang chi tiết với tiểu sử, thông tin ngày sinh/ngày mất, và các câu nói nổi tiếng.
+
 Thiết kế đáp ứng: Website hoàn toàn tương thích với các kích thước màn hình khác nhau.
+
 Bảng tương tác: Người dùng có thể xem chi tiết của các nhà khoa học trực tiếp trong bảng với các thao tác nhanh.
+
+
+
 Công Nghệ Sử Dụng
+
+
 Frontend:
 React.js: Thư viện JavaScript để xây dựng giao diện người dùng.
 React Router: Quản lý điều hướng và tạo các trang động.
